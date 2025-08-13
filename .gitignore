@@ -1,0 +1,7 @@
+﻿.idea/
+.vscode/
+out/
+build/
+dist/
+target/
+*.log

@@ -1,6 +1,6 @@
 package Practica;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         /* EJERCICIO 1:
@@ -89,7 +89,7 @@ public class main {
  */
 
 
-/*
+
         int a = 1;
         int b = 4;
         a++; // A = 2
@@ -101,7 +101,7 @@ public class main {
         b = --a + b; // B = -1, A = -1
         System.out.println("Ej J): A = " + a + ", B = " + b);
 
- */
+
 
 
 

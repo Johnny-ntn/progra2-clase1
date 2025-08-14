@@ -158,13 +158,169 @@ public class Main {
 
 
 
+        // EJERCICIO 3: Escriba un metodo en java que:
+
+
+        // A) Reciba un número y determine si es par.
+        /*int numero = 7;
+        boolean esPar;
+
+        if (numero%2 == 0) {
+            esPar = true;
+        } else {
+            esPar = false;
+        }
+        System.out.println(esPar);*/
+
+
+        // B) Reciba un número y determine si es múltiplo de 5 o 7
+        /*int numero = 15;
+        boolean multiploDeCinco = false;
+        boolean multiploDeSiete = false;
+
+        if (numero%5==0 && numero%7==0) {
+            multiploDeCinco = true;
+            multiploDeSiete = true;
+        } else if (numero%5==0) {
+            multiploDeCinco = true;
+        } else if (numero%7==0) {
+            multiploDeSiete = true;
+        } else {
+            System.out.println("El número " + numero + " no es múltiplo de 5 o 7");
+        }
+        System.out.println("Es múltiplo de 5? " + multiploDeCinco + ". Es múltiplo de 7? " + multiploDeSiete);*/
+
+
+        // C) Reciba dos números y retorne el mayor de ellos.
+        /*int numeroUno = 1;
+        int numeroDos = 2;
+
+        if (numeroUno > numeroDos) {
+            System.out.println("numeroUno es mayor");
+        } else if (numeroDos > numeroUno) {
+            System.out.println("numeroDos es mayor");
+        } else {
+            System.out.println("numeroUno y numeroDos son iguales");
+        }*/
+
+
+        // D) Reciba tres números y retorne el mayor de los tres.
+        /*int numeroUno = 14;
+        int numeroDos = 22;
+        int numeroTres = 32;
+
+        if (numeroUno > numeroDos && numeroUno > numeroTres) {
+            System.out.println("numeroUno es el mayor");
+        } else if (numeroDos > numeroUno && numeroDos > numeroTres) {
+            System.out.println("numeroDos es el mayor");
+        } else {
+            System.out.println("numeroTres es el mayor");
+        } // no tiene en cuenta si dos valores son iguales*/
+
+
+        /*E) Reciba un número entre 0 y 10, y si el número está entre 0 y 4 muestre "desaprobado"
+            si está entre 5 y 6 muestre "suspenso", y si es mayor que 6 muestre "aprobado".*/
+        /*int nota = 8;
+
+        if (nota < 0 || nota > 10) {
+            System.out.println("Nota ingresada inválida");
+        } else if (nota >= 0 && nota <= 4) {
+            System.out.println("desaprobado");
+        } else if (nota == 5 || nota == 6) {
+            System.out.println("suspenso");
+        } else {
+            System.out.println("aprobado");
+        }*/
+
+
+        // F) Muestre por pantalla todos los números entre 0 y 100.
+        /*int contador = 0;
+        while (contador <= 100) {
+            if (contador < 100) {
+                System.out.print(contador + ", ");
+            } else {
+                System.out.print(contador); // último número sin coma
+            }
+            contador++;
+        } // Código optimizado para que todos los números salgan horizontalmente por consola*/
+
+
+        // G) Reciba un número N, y muestre por pantalla todos los enteros entre 0 y N que sean pares.
+           /* int numeroN = 33;
+            int contador = 0;
+            while (contador <= numeroN) {
+                if (contador%2==0) {
+                    System.out.print(contador + " ");
+                }
+                contador++;
+            }*/
+
+
+        // H) Reciba un número N, y retorne la sumatoria desde 0 a N.
+        /*int numeroN = 5;
+        int contador = 0;
+        int suma = 0;
+
+        while (contador <= numeroN) {
+            suma += contador;
+            contador++;
+        }
+        System.out.println(suma);*/
+
+
+        // I) Reciba un número N, y retorne la suma de sus dígitos.
+        /*int numeroN = 156;
+        int sumaDigitos = 0;
+        int numeroN_aux = numeroN;
+
+        while (numeroN > 0) {
+            sumaDigitos += (numeroN%10);
+            numeroN /= 10;
+        }
+        System.out.println("La suma de los dígitos de " + numeroN_aux + " es: " + sumaDigitos);*/
+
+
+        // J) Determine si, dado un número N = dm, dm-1 , ..., dl y un dígito d, d = di para 1 <= i <= m
+        // QUE T_T ????
 
 
 
+        // K) Determine si un número dado es primo.
+        /*int numeroDado = 7;
+        int contador = 1;
+        int contadorDiv = 0;
+
+        while (contador <= numeroDado) {
+            if (numeroDado % contador == 0) {
+                contadorDiv++;
+            }
+            contador++;
+        }
+        if (contadorDiv == 2) {
+            System.out.println("Es primo");
+        } else {
+            System.out.println("No es primo");
+        }*/
 
 
+        /*L) Determine si un número dado es perfecto; un número es perfecto si la suma de los divisores del número
+        /incluyendo al 1 y excluyendo al número) es igual al número.
+        Ej: suma de divisores de 6 --> 1 + 2 + 3 = 6 --> es perfecto*/
+        int numeroDado = 28;
+        int contador = 1;
+        int sumaDivisores = 0;
 
-
+        while (contador < numeroDado) {
+            if (numeroDado % contador == 0) {
+                sumaDivisores += contador;
+            }
+            contador++;
+        }
+        if (sumaDivisores == numeroDado) {
+            System.out.println("El número dado es perfecto");
+        } else {
+            System.out.println("El número dado no es perfecto");
+        }
 
 
     }
